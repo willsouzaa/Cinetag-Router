@@ -1,0 +1,21 @@
+/*usando root criar variavel para importar estilos de fontes da api da google*/
+:root {
+  --fonte: 'Montserrat', sans-serif;
+  --branco:#ffffff;
+  --preto: #000000;
+  --cinza: #e2e2e2;
+}
+
+body {
+  margin: 0;
+  /*foi criada a variavel na font family var(--fonte); para importar os estilos de root*/
+  font-family: var(--fonte);
+  /*foi criada a variavel no background-color: var(--branco); para pegar a cor do root*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

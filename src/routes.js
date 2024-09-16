@@ -8,11 +8,11 @@ function AppRoutes() {
     return(
         /*O componente BrowserRouter é responsável por informar a nossa aplicação que teremos um roteamento de componentes a seguir*/
         /*o Routes é o próprio roteador e o Route é a rota em específico.*/
-        <BrowserRouter>
+        <BrowserRouter >
         <Routes>
             <Route path="/" element= {<PaginaBase />}>
             <Route index element={<Inicio />}></Route>
-            <Route path="Favoritos" element={<Favoritos />}></Route>
+            <Route path="favoritos" element={<Favoritos />}></Route>
             <Route path=":id" element={<Player />}></Route>
             <Route path="*" element={<NaoEncontrada />}></Route>
             </Route>
